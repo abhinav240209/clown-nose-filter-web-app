@@ -1,0 +1,30 @@
+body {
+    background-image:url("background.jpg");
+    text-align:center;
+}
+
+canvas {
+    border-width:2px;
+    border-style:dashed;
+    border-color:"black";
+    animation-name:glow;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    
+}
+
+.btn-warning:hover {
+     background-color:rgb(255, 108, 108);
+}
+
+@keyframes glow{
+    from{
+        box-shadow:2px 3px 20px red;
+    }
+    to{
+        box-shadow:2px 3px 20px orange;
+    }    
+    to{
+        box-shadow:2px 3px 20px blue;
+    }
+}
